@@ -1,0 +1,16 @@
+.text {
+    border: 2px solid #ddd;
+    color: #a7a6a6;
+    padding: 7px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+
+}
+
+.gap {
+    display: flex;
+    gap: 10px;
+}
