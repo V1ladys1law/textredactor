@@ -3,25 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Text Editor</title>
-
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <p id="text" contenteditable="true">type here</p>
+    
     <div class="flex gap">
         <input type="color" id="color">
+        <input type="number" id="size" value="16" style="width: 50px;">
+        
         <div class="flex">
-            <input type="checkbox" name="b" id="b">
+            <input type="checkbox" id="b">
             <p>b</p>
         </div>
         <div class="flex">
-            <input type="checkbox" name="i" id="i">
+            <input type="checkbox" id="i">
             <p>i</p>
         </div>
     </div>
-</body>
+
+    <!-- 3 радіокнопки для вирівнювання -->
+    <div class="flex gap">
+        <label><input type="radio" name="align" value="left" checked> Ліво</label>
+        <label><input type="radio" name="align" value="center"> Центр</label>
+        <label><input type="radio" name="align" value="right"> Право</label>
+    </div>
+
     <script src="main.js"></script>
+</body>
 </html>
